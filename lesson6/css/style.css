@@ -12,7 +12,7 @@ header{
 
 .container{
   font-family: 'Roboto-Regular';
-
+overflow: hidden;
 	position:relative;
 	max-width: 1170px;
 	width:100%;
