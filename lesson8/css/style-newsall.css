@@ -322,8 +322,39 @@ img{
 	display:block;
 }
 
-@media(max-width:489px){
-	.content-item{
+@media(max-width:1024px){
+
+	.burger{
+		display:block;
+	}
+
+	.main-navigation{
+		display:none;
+	}
+
+	.video{
+		display: none;
+	}
+
+	.featured-content-left{
 		width:100%;
+	}
+	.featured-content-right{
+		width:100%;
+		margin-top: 20px;
+	}
+
+	.featured-content{
+		flex-direction: column;
+
+	}
+
+	.news-item-container .news-item:last-child{
+		display:none;
+	}
+
+	.news-item-container{
+
+		justify-content: space-between;
 	}
 }
