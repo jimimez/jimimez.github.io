@@ -72,12 +72,14 @@ $(document).ready(function() {
 
 	})
 
-	$('.dot').on('click', function(){
-		var ind=$(this).index();
-		goToSlide(ind);
-	})
+	// $('.dot').on('click', function(){
+	// 	var ind=$(this).index();
+	// 	goToSlide(ind);
+	// })
 
-	
+	var dots=document.getElementsByClassName('dots');
+	alert('ok');
+	console.log(dots[0]);
 
 
 

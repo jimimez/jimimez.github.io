@@ -1,0 +1,120 @@
+/*-----------------------------fonts------------------------------------*/
+@font-face {
+font-family:"Montserrat-Bold";
+src:url("../fonts/Montserrat-Bold.eot?") format("eot"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"),
+    url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+
+font-family: 'Montserrat-Light';
+src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),  
+     url('../fonts/Montserrat-Light.woff') format('woff'), 
+     url('../fonts/Montserrat-Light.ttf')  format('truetype'), 
+     url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+     font-weight:normal;
+     font-style:normal;
+}
+/*-----------------------------fonts end------------------------------------*/
+.flex{
+	display:flex;
+}
+img{
+	display: block;
+}
+/*-----------------------------header------------------------------------*/
+
+header{
+	background: #44433e;
+	padding:25px 0;
+}
+
+.container{
+	width:1140px;
+	margin:0 auto;
+	justify-content: space-between;
+}
+
+nav a{
+	
+	color:#b8b8b8;
+	text-transform: uppercase;
+	font-family:"Montserrat-Bold";
+	font-size: 13px;
+}
+nav ul{
+	line-height: 66px;
+}
+
+nav ul li{
+	margin-right: 20px;
+}
+nav ul li:last-child{
+	margin-right: 8px;
+}
+button{
+	padding:0;
+	margin:0;
+	border:none;
+	outline:none;
+	background: none;
+	cursor:pointer;
+}
+
+.search-button{
+	padding: 20px 0;
+}
+/*-----------------------------header end------------------------------------*/
+
+/*-----------------------------home------------------------------------*/
+.home{
+	background: #3c3c3c;
+
+	padding:245px 0;
+}
+
+.home div:nth-child(1){
+	font-family: "montserrat-bold";
+	text-transform: uppercase;
+	color:#ffffff;
+	text-align: center;
+	font-size: 35px;
+}
+.home div:nth-child(1) span{
+	color:#18cfab;
+}
+.home div:nth-child(2){
+	font-family: "montserrat-bold";
+	text-transform: uppercase;
+	color:#ffffff;
+	text-align: center;
+	font-size:79px;
+	margin-top: 45px;
+
+}
+.home div:nth-child(3){
+	color:#d4d4d4;
+	text-align: center;
+	font-size: 34px;
+	margin-top: 45px;
+}
+
+.home-buttons a{
+	display:inline-block;
+	padding:26px 32px;
+	font-size:13px;
+	text-transform: uppercase;
+	color:#ffffff;
+	border-radius: 5px;
+}
+.home-buttons a:nth-child(1){
+ background: #18cfab;
+ margin-right: 28px;
+}
+.home-buttons a:nth-child(2){
+ background: #00cbf6;
+}
+.home-buttons{
+	text-align: center;
+	margin-top: 142px;
+}
+/*-----------------------------home end------------------------------------*/
