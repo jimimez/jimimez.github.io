@@ -189,3 +189,21 @@ position: relative;
 }
 
 /*-----------------------------4 option end------------------------------------*/
+
+/*-----------------------------features------------------------------------*/
+.features-item p{
+ 	font-size: 14px;
+ 	color:#777777;
+}
+.features-item{
+	
+}
+.features-container{
+	align-items: center;
+}
+.features-title{
+	color:#717171;
+}
+/*-----------------------------feature end------------------------------------*/
+
+
