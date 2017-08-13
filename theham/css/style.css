@@ -69,11 +69,11 @@ button{
 /*-----------------------------home------------------------------------*/
 .home{
 	background: #3c3c3c;
-
+position: relative;
 	padding:245px 0;
 }
 
-.home div:nth-child(1){
+.home-title1{
 	font-family: "montserrat-bold";
 	text-transform: uppercase;
 	color:#ffffff;
@@ -83,7 +83,7 @@ button{
 .home div:nth-child(1) span{
 	color:#18cfab;
 }
-.home div:nth-child(2){
+.home-title2{
 	font-family: "montserrat-bold";
 	text-transform: uppercase;
 	color:#ffffff;
@@ -92,7 +92,7 @@ button{
 	margin-top: 45px;
 
 }
-.home div:nth-child(3){
+.home-title3{
 	color:#d4d4d4;
 	text-align: center;
 	font-size: 34px;
@@ -118,4 +118,74 @@ button{
 	text-align: center;
 	margin-top: 142px;
 }
+.slider-nav{
+	position:absolute;
+	right:204px;
+	bottom:122px;
+}
+.preview-picture{
+	width:170px;
+	height:103px;
+	background: #1f1f1f;
+}
+.slider-buttons{
+	display:flex;
+	justify-content: space-between;
+	color:#878787;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 40px;
+}
+.slider-button{
+	width:64px;
+	height:64px;
+	background: #3c4140;
+	text-align: center;
+	line-height: 64px;
+	cursor: pointer;
+}
+.slider-button:hover{
+	background: #18cfab;
+	color:white;
+}
 /*-----------------------------home end------------------------------------*/
+
+/*-----------------------------4 option------------------------------------*/
+.option-item{
+	width:25%;
+	height:257px;
+	background-repeat: no-repeat;
+	background-position: center 40px;
+	padding-top: 170px;
+	text-align: center;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+.option-item:nth-child(2n+1){
+	background-color: #1c2a33;
+	color:#18cfab;
+	border-top: 5px solid #18cfab;
+}
+.option-item:nth-child(2n){
+	background-color: #18cfab;
+	color:white;
+	border-top: 5px solid #fff;
+}
+.option-item:nth-child(1){
+	background-image:  url(../images/hand.png);
+
+}
+.option-item:nth-child(2){
+	background-image:  url(../images/diamond.png);
+
+}
+.option-item:nth-child(3){
+	background-image:  url(../images/bulb.png);
+	
+}
+.option-item:nth-child(4){
+	background-image:  url(../images/comp.png);
+	
+}
+
+/*-----------------------------4 option end------------------------------------*/
