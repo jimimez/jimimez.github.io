@@ -1,3 +1,3 @@
-$("navlink").hover(function(){
+$(".navlink").hover(function(){
 	$(this).addClass("border");
 })

@@ -255,4 +255,73 @@ position: relative;
 }
 /*-----------------------------feature end------------------------------------*/
 
+/*-----------------------------about------------------------------------*/
+.about{
+	background: #090f14;
+	padding-top: 95px;
+}
+.about-title{
+	font-size: 35px;
+	color:white;
+	text-align: center;
+}
+.about-nav{
+	color:white;
+}
+.about-nav ul{
+	margin:0 auto;
+	
+	display: flex;
+}
+.about-nav{
+	align-items: flex-start;
+}
+.skils{
+	color:white;
+	font-size: 13px;
+	text-transform: uppercase;
+width:40%;
+margin:0 auto;
+}
+
+.skil1{
+	background: #9c5da5;
+	display: block;
+	width:60%;
+}
+.skil2{
+	background: #11b0de;
+	display: block;
+	width:70%;
+}
+.skil3{
+	background: #d67f7f;
+	display: block;
+	width:55%;
+}
+.skil4{
+	background: #20bc9d;
+	width:90%;
+	display: block;
+}
+.skil5{
+	background: #bb8a36;
+	display: block;
+	width:80%;
+}
+.skils div{
+	border:1px solid #959595;
+	width:100%;
+	margin-top:14px;
+	border-radius: 3px;
+}
+.skil-level{
+	padding: 16px 0 16px 17px;
+}
+.about-nav-ul a:hover{
+	border-top:1px solid #18cfab;
+}
+/*-----------------------------about end------------------------------------*/
+
+
 
