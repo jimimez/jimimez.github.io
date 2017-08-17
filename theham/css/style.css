@@ -21,6 +21,16 @@ src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
 img{
 	display: block;
 }
+.clear:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.title{
+	text-align: center;
+    font-size: 36px;
+    color: #4e4e4e;
+}
 /*-----------------------------header------------------------------------*/
 
 header{
@@ -211,10 +221,7 @@ position: relative;
 	color:#717171;
 }
 .features-title{
-	text-align: center;
-	font-size:36px;
 	margin-top:95px;
-	color:#18cfab;
 }
 .line{
 	width:74px;
@@ -259,6 +266,7 @@ position: relative;
 .about{
 	background: #090f14;
 	padding-top: 95px;
+	padding-bottom: 95px;
 }
 .about-title{
 	font-size: 35px;
@@ -280,7 +288,7 @@ position: relative;
 	color:white;
 	font-size: 13px;
 	text-transform: uppercase;
-width:40%;
+width:100%;
 margin:0 auto;
 }
 
@@ -321,7 +329,46 @@ margin:0 auto;
 .about-nav-ul a:hover{
 	border-top:1px solid #18cfab;
 }
+.about-content{
+	float: right;
+    width: 40%;
+}
 /*-----------------------------about end------------------------------------*/
+
+/*-----------------------------work------------------------------------*/
+.work{
+	background: #f8fcfe;
+	padding-top: 95px;
+}
+.work-tabs li{
+	padding:22px 28px;
+	background: #ffffff;
+	border: 1px solid #ebebeb;
+	cursor: pointer;
+}
+.work-tabs ul{
+	margin: 67px auto;
+}
+.row div{
+	width:25%;
+	height:207px;
+}
+.row1 div:nth-child(2n){
+	background: #8a8a8a;
+}
+.row1 div:nth-child(2n+1){
+	background: #24413e;
+}
+.row2 div:nth-child(2n){
+	background: #24413e;
+}
+.row2 div:nth-child(2n+1){
+	background: #8a8a8a;
+}
+
+
+/*-----------------------------work end------------------------------------*/
+
 
 
 
