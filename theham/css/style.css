@@ -365,8 +365,52 @@ margin:0 auto;
 .row2 div:nth-child(2n+1){
 	background: #8a8a8a;
 }
-
-
+.load-more{
+	padding:25px 25px 25px 50px;
+	background-color:#18cfab;
+	color:white;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 69px;
+	background-image: url(../images/plus.png);
+	background-repeat: no-repeat;
+	background-position:20px center;
+}
+.button-block{
+	display: flex;
+	justify-content: center;
+}
+.work-item1{
+	background: #f8fcfe !important;
+}
+.work-container{
+	border: 1px solid #f0f4f5;
+}
+.work-item1-icons{
+	display: flex;
+    justify-content: center;
+}
+.work-container p{
+	text-align: center;
+}
+.work-item1-title1{
+	text-transform: uppercase;
+	font-size: 14px;
+	color:#18cfab;
+	margin-top: 33px;
+}
+.work-item1-title2{
+	color: #8a8a8a;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.work-item1-icons{
+	margin-top: 43px;
+}
+.work-item1-icons img:nth-child(1){
+	margin-right: 5px;
+}
 /*-----------------------------work end------------------------------------*/
 
 
