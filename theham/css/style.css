@@ -20,6 +20,7 @@ src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
 }
 img{
 	display: block;
+
 }
 .clear:after{
 	content:"";
@@ -31,6 +32,12 @@ img{
     font-size: 36px;
     color: #4e4e4e;
 }
+.tabs li{
+	padding: 22px 28px;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+}
+
 /*-----------------------------header------------------------------------*/
 
 header{
@@ -39,7 +46,7 @@ header{
 }
 
 .container{
-	max-width:1140px;
+	max-width:893px;
 	width:90%;
 	margin:0 auto;
 	justify-content: space-between;
@@ -215,7 +222,7 @@ position: relative;
 	
 }
 .features-container{
-	align-items: center;
+	justify-content: space-between;
 }
 .features-title{
 	color:#717171;
@@ -259,6 +266,9 @@ position: relative;
 }
 .features-item-title:hover{
 	color:#18cfab;
+}
+.features-col{
+	width:280px;
 }
 /*-----------------------------feature end------------------------------------*/
 
@@ -341,10 +351,7 @@ margin:0 auto;
 	padding-top: 95px;
 }
 .work-tabs li{
-	padding:22px 28px;
 	background: #ffffff;
-	border: 1px solid #ebebeb;
-	cursor: pointer;
 }
 .work-tabs ul{
 	margin: 67px auto;
@@ -352,6 +359,7 @@ margin:0 auto;
 .row div{
 	width:25%;
 	height:207px;
+	overflow: hidden;
 }
 .row1 div:nth-child(2n){
 	background: #8a8a8a;
@@ -380,6 +388,7 @@ margin:0 auto;
 .button-block{
 	display: flex;
 	justify-content: center;
+	padding-bottom: 90px;
 }
 .work-item1{
 	background: #f8fcfe !important;
@@ -411,7 +420,65 @@ margin:0 auto;
 .work-item1-icons img:nth-child(1){
 	margin-right: 5px;
 }
+.work-menu-list li:hover{
+	color:#18cfab;
+	border-top:3px solid #18cfab;
+}
+
 /*-----------------------------work end------------------------------------*/
+
+/*-----------------------------service------------------------------------*/
+.service{
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+.services-list{
+	margin-top: 67px;
+}
+.service-tab-content{
+	margin-top: 24px;
+}
+.tab-content-image{
+	margin-right: 20px;
+    width: 154px;
+}
+.tab-content-image img{
+	width:100%;
+}
+.tab-content-text{
+	width: 800px;
+    font-size: 12px;
+    line-height: 20px;
+    color:#8d8d8d;
+}
+.services-list li:hover span{
+	color:white;
+	background: #18cfab;
+	border-bottom: none;
+}
+.services-list li:hover img{
+ display:block;
+}
+.services-list span{
+	padding: 22px 28px;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	display: block;
+}
+.services-list li img{
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	transform: translateX(-50%);
+	display: none;
+}
+.services-list li{
+	position: relative;
+padding-bottom: 12px;
+}
+
+/*-----------------------------service end------------------------------------*/
+
 
 
 
