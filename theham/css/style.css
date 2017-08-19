@@ -122,13 +122,14 @@ position: relative;
 	margin-top: 45px;
 }
 
-.home-buttons a{
+.buttons a{
 	display:inline-block;
 	padding:26px 32px;
 	font-size:13px;
 	text-transform: uppercase;
 	color:#ffffff;
 	border-radius: 5px;
+	background: #18cfab;
 }
 .home-buttons a:nth-child(1){
  background: #18cfab;
@@ -478,6 +479,31 @@ padding-bottom: 12px;
 }
 
 /*-----------------------------service end------------------------------------*/
+
+/*-----------------------------purchase end------------------------------------*/
+.purchase{
+	background: #40474b;
+	padding-bottom: 126px;
+}
+.purchase p:nth-child(1){
+	color:#18cfab;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 34px;
+	padding-top: 126px;
+}
+.purchase p:nth-child(2){
+	font-size: 14px;
+	text-align: center;
+	margin-top: 30px;
+	color:#8d8d8d;
+}
+.purchase-button{
+	text-align: center;
+	margin-top: 76px;
+}
+/*-----------------------------purchase end------------------------------------*/
+
 
 
 
