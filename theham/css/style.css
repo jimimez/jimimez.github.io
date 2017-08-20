@@ -560,14 +560,80 @@ text-align: center;
 .fun-fact-item{
 	height: 237px;
     width: 25%;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.fun-fact-item:nth-child(2n+1){
     background: #25333c;
+    border-top: 5px solid #18cfab;
+}
+.fun-fact-item:nth-child(2n){
+    background: #18cfab;
+    border-top: 5px solid #25333c;
+}
+.fun-fact-item:nth-child(2n+1) .circle{
+    border: 1px solid #18cfab;
+
+}
+.fun-fact-item:nth-child(2n) .circle{
+    border: 1px solid #25333c;
+}
+.fun-fact-item:nth-child(2n+1) .circle .fun-fuct-icon{
+    background-color:  #18cfab;  
+}
+.fun-fact-item:nth-child(2n) .circle .fun-fuct-icon{
+    background-color:  #25333c;
 }
 .circle{
 	width: 113px;
     height: 113px;
     border-radius: 50%;
-    border: 1px solid #18cfab;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: auto;
 }
+
+.fun-fuct-icon{
+	width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.fun-fact-item:nth-child(1) .fun-fuct-icon{
+background-image: url(../images/bag.png);
+}
+.fun-fact-item:nth-child(2) .fun-fuct-icon{
+background-image: url(../images/profile.png);
+}
+.fun-fact-item:nth-child(3) .fun-fuct-icon{
+background-image: url(../images/cart.png);
+}
+.fun-fact-item:nth-child(4) .fun-fuct-icon{
+background-image: url(../images/gps.png);
+}
+.fun-fact-item p{
+text-align: center;
+margin-top: 10px;
+}
+.fan-fact-item-title p:nth-child(1){
+	color:white;
+	font-size: 30px;
+}
+.fan-fact-item-title p:nth-child(2){
+	
+	font-size: 14px;
+}
+.fun-fact-item:nth-child(2n+1) .fan-fact-item-title p:nth-child(2){
+	color:#18cfab;
+
+}
+.fun-fact-item:nth-child(2n) .fan-fact-item-title p:nth-child(2){
+	color:#25333c;
+
+}
+
 /*-----------------------------fun-fuct end------------------------------------*/
 
 
