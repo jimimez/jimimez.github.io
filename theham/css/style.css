@@ -636,6 +636,66 @@ margin-top: 10px;
 
 /*-----------------------------fun-fuct end------------------------------------*/
 
+/*-----------------------------pricing table------------------------------------*/
+.pricing-table{
+	padding:100px 0;
+}
+.pricing-table-col{
+	width:25%;
+	background: #f8fcfe;
+	margin-top: 67px;
+	border-radius: 10px;
+	border: 1px solid #e5e6e7;
+	border-radius: 5px;
+}
+.pricing-table-col div{
+	width:100%;
+	font-size: 14px;
+	color: #777777;
+	text-align: center;
+	padding: 20px 0 11px 0;
+	border-top: 1px solid #e5e6e7;
+	border-bottom: 1px solid #e5e6e7;
+}
+.pricing-table-col div:last-child a{
+display:inline-block;
+	padding: 20px 50px;
+	background: #2e4a5b;
+	color: white;
+	border-radius: 3px;
+}
+.pricing-table-col div:last-child{
+	padding:24px 0;
+}
+.pricing-table-col div:first-child{
+	font-size: 24px;
+	color:#717171;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.price{
+	font-size: 39px;
+	color: white;
+}
+.pricing-table-col div:nth-child(2){
+	background: #2e4a5b;
+	color: #ebecee;
+}
+.pricing-table-col:hover div:nth-child(2){
+background: #18cfab;
+}
+.pricing-table-col:hover div:nth-child(1){
+color: #18cfab;
+}
+.pricing-table-col:hover div:last-child a{
+background: #18cfab;
+}
+.pricing-table-col:hover{
+	box-shadow: 0 0 5px #888;
+}
+/*-----------------------------pricing table end------------------------------------*/
+
+
 
 
 
