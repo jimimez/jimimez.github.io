@@ -484,6 +484,7 @@ padding-bottom: 12px;
 .purchase{
 	background: #40474b;
 	padding-bottom: 126px;
+	background-image: url(../images/s34.png);
 }
 .purchase p:nth-child(1){
 	color:#18cfab;
@@ -672,6 +673,7 @@ display:inline-block;
 	color:#717171;
 	text-transform: uppercase;
 	font-weight: bold;
+
 }
 .price{
 	font-size: 39px;
@@ -686,6 +688,9 @@ background: #18cfab;
 }
 .pricing-table-col:hover div:nth-child(1){
 color: #18cfab;
+background-image: url(../images/offer.png);
+background-repeat: no-repeat;
+background-position: top right;
 }
 .pricing-table-col:hover div:last-child a{
 background: #18cfab;
@@ -693,7 +698,34 @@ background: #18cfab;
 .pricing-table-col:hover{
 	box-shadow: 0 0 5px #888;
 }
+
 /*-----------------------------pricing table end------------------------------------*/
+
+/*-----------------------------feedback------------------------------------*/
+.feedback{
+	background-color: #2e404d;
+	padding:100px 0;
+}
+.feedback .title{
+	color:white;
+}
+.feedback-title-image img{
+	margin: 67px auto 47px auto;
+}
+.feedback p{
+	text-align: center;
+	color: #a0a2a4;
+	line-height: 25px;
+}
+.people p:nth-child(1){
+	text-transform: uppercase;
+	color:#18cfab;
+	margin-top: 44px;
+}
+.people p:nth-child(2){
+	font-size: 13px;
+}
+/*-----------------------------feedback end------------------------------------*/
 
 
 
