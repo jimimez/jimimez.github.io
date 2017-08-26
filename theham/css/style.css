@@ -725,6 +725,58 @@ background: #18cfab;
 .people p:nth-child(2){
 	font-size: 13px;
 }
+.people-circle{
+	border-radius: 50%;
+	box-sizing: border-box;
+
+}
+.people-circle-out{
+	border:7px solid #2b5f62;
+	margin: auto;
+	width:113px;
+	height: 113px;
+	margin-top: 27px;
+}
+.people-circle-in{
+	width: 100%;
+	height: 100%;
+	border: 3px solid #18cfab;
+	background-color: #878787;
+}
+.people-arrow-button{
+	margin: auto 0;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+	border: 1px solid #bbbbbb;
+	color:#bbbbbb;
+}
+.people-circle-small{
+	margin: auto 0;
+	width:56px;
+	height:56px;
+	border:3px solid #2b5f62;
+}
+.people-circle-small-in{
+	display: block;
+	width:100%;
+	height:100%;
+	background-color: #878787;
+}
+.people-select{
+	display: flex;
+    justify-content: center;
+}
+.people-select{
+	margin-top:50px;
+}
+.people-select span{
+	margin-right: 29px;
+}
+.people-select span:last-child{
+	margin-right: 0;
+}
 /*-----------------------------feedback end------------------------------------*/
 
 
