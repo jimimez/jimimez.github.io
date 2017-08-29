@@ -863,10 +863,22 @@ section{
     height: 40px;
     border-radius: 50%;
     background-color: #f4f5f6;
-    background-image: url(../images/plus.png);
+    background-image: url(../images/plus2.png);
     background-repeat: no-repeat;
     background-position: center center;
 
+}
+.team-item:nth-child(1) .team-image{
+	background-image: url(../images/team-image1.png);
+}
+.team-item:nth-child(2) .team-image{
+	background-image: url(../images/team-image2.png);
+}
+.team-item:nth-child(3) .team-image{
+	background-image: url(../images/team-image3.png);
+}
+.team-item:nth-child(4) .team-image{
+	background-image: url(../images/team-image1.png);
 }
 /*-----------------------------team end------------------------------------*/
 
