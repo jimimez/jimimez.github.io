@@ -777,7 +777,99 @@ background: #18cfab;
 .people-select span:last-child{
 	margin-right: 0;
 }
+.people-arrow-button:hover{
+	background: #18cfab;
+	color:white;
+}
+section{
+	padding:90px 0;
+}
 /*-----------------------------feedback end------------------------------------*/
+
+/*-----------------------------team------------------------------------*/
+.team-item div:nth-child(n+2){
+	background: #2e4a5b;
+}
+.team-item{
+	width:24%;
+}
+.team-social span{
+	width:25%;
+	padding:12px 0;
+}
+.team-social img{
+	margin:auto;
+}
+.team-social span:nth-child(-n+3){
+	border-right: 1px solid #bbf1e6;
+}
+.team-social{
+	border-top: 1px solid #bbf1e6;
+}
+.team-title p:first-child{
+	color:white;
+	font-size: 13px;
+
+}
+.team-title p:nth-child(2){
+	color:#18cfab;
+	font-size: 11px;
+	margin-top: 12px;
+}
+.team-title{
+	padding:15px;
+	box-sizing: border-box;
+}
+.team-image{
+	padding-top: 100%;
+	background-color: #dae9e6;
+	position: relative;
+}
+.team-container{
+	margin-top: 67px;
+}
+.team-item:hover .team-title{
+	background: #18cfab;
+}
+.team-item:hover .team-social{
+	background: #18cfab;
+}
+.team-item:hover p:nth-child(2){
+	color: #2e4a5b;
+}
+.team-item:hover .team-image-zoom{
+	display: block;
+}
+
+.team-image-zoom{
+	padding:5px;
+	box-sizing: border-box;
+	width:56px;
+	height:56px;
+	border-radius: 50%;
+	border: 3px solid #18d7ab;
+	display: none;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.team-image-zoom-in{
+	position: absolute;
+	display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f4f5f6;
+    background-image: url(../images/plus.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+/*-----------------------------team end------------------------------------*/
+
 
 
 
