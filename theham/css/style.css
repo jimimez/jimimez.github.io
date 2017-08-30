@@ -271,6 +271,9 @@ position: relative;
 .features-col{
 	width:280px;
 }
+.features{
+	padding-bottom: 90px;
+}
 /*-----------------------------feature end------------------------------------*/
 
 /*-----------------------------about------------------------------------*/
@@ -781,9 +784,7 @@ background: #18cfab;
 	background: #18cfab;
 	color:white;
 }
-section{
-	padding:90px 0;
-}
+
 /*-----------------------------feedback end------------------------------------*/
 
 /*-----------------------------team------------------------------------*/
@@ -880,7 +881,50 @@ section{
 .team-item:nth-child(4) .team-image{
 	background-image: url(../images/team-image1.png);
 }
+.team{
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
 /*-----------------------------team end------------------------------------*/
+
+/*-----------------------------purchase2------------------------------------*/
+.purchase-now{
+	padding: 100px 200px;
+	background: #233641;
+}
+.purchase-now-title p:first-child{
+	color:white;
+	text-align: center;
+	font-size: 42px;
+	text-transform: uppercase;
+}
+.purchase-now-title p:nth-child(2){
+	color:#18cfab;
+	text-align: center;
+	font-size: 38px;
+	text-transform: uppercase;
+}
+.purchase-now-list-item{
+	margin-top:10px;
+}
+.purchase-now-list-item span{
+	margin:auto 0;
+	color:#888f93;
+}
+.purchase-now-list-item img{
+	margin-right: 10px;
+}
+.purchase-now-button{
+	margin-top:10px;
+}
+.purchase-now-content{
+	padding-left: 60%;
+}
+.purchase-now-list{
+	margin-top: 90px;
+}
+/*-----------------------------purchase2 end------------------------------------*/
+
 
 
 
