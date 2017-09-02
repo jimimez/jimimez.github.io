@@ -925,6 +925,50 @@ background: #18cfab;
 }
 /*-----------------------------purchase2 end------------------------------------*/
 
+/*-----------------------------contact------------------------------------*/
+.contact-container{
+	width:1121px;
+	background: #ffffff;
+	padding:124px 0;
+	justify-content: space-between;
+}
+.map{
+	width:692px;
+	height: 554px;
+	background: #9e9e9e;
+}
+.form{
+	width:409px;
+	height:554px;
+}
+input{
+	width:100%;
+	border:1px solid #cddbd9;
+	box-sizing: border-box;
+	padding:20px 0 20px 15px;
+}
+form{
+	margin-top: 80px;
+}
+form button{
+	background: #18cfab;
+	width:100%;
+	text-transform: uppercase;
+	color:#ffffff;
+	padding:20px 0;
+	border-radius: 5px;
+	margin-top: 17px;
+}
+.textarea{
+	padding-bottom: 130px;
+	margin-top: 15px;
+}
+.mail{
+	margin-top:15px;
+}
+/*-----------------------------contact end------------------------------------*/
+
+
 
 
 
