@@ -933,12 +933,14 @@ background: #18cfab;
 	justify-content: space-between;
 }
 .map{
-	width:692px;
+	max-width:692px;
+	width:62%;
 	height: 554px;
 	background: #9e9e9e;
 }
 .form{
-	width:409px;
+	max-width:409px;
+	width:35%;
 	height:554px;
 }
 input{
