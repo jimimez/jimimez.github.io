@@ -928,6 +928,7 @@ background: #18cfab;
 /*-----------------------------contact------------------------------------*/
 .contact-container{
 	max-width:1121px;
+	width:84%;
 	background: #ffffff;
 	padding:124px 0;
 	justify-content: space-between;
