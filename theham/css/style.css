@@ -971,6 +971,95 @@ form button{
 }
 /*-----------------------------contact end------------------------------------*/
 
+/*-----------------------------footer------------------------------------*/
+.footer{
+	padding:120px 0;
+	background-color:#1c2b33;
+}
+h3{
+	font-size:35px;
+	color:white;
+}
+h3 span{
+	text-transform: uppercase;
+	color:#18cfab;
+}
+.theham{
+	color:#848688;
+	font-size: 12px;
+	width:20%;
+}
+.theham p{
+	line-height: 20px;
+}
+.theham p:nth-child(2){
+	margin-top:30px;
+}
+.theham p:nth-child(3){
+	margin-top:70px;
+}
+.theham p:nth-child(4){
+	margin-top:30px;
+}
+.recent-post-image{
+	width:77px;
+	height:66px;
+	background-color: #959595; 
+}
+.recent-post h4, .tags {
+	color:white;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+.recent-post-title{
+	margin-bottom: 50px;
+}
+.recent-post-item{
+	color:#848688;
+	font-size: 12px;
+	line-height: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #294453;
+	margin-bottom: 30px;
+}
+.recent-post{
+	width:29%;
+}
+.recent-post-text{
+	margin-left: 10px;
+	width: 68%;
+}
+.recent-post-date{
+	margin-top:15px;
+	color: #f1f1f1;
+}
+.recent-post-item:last-child{
+	border-bottom: none;
+}
+.tags-buttons-row a{
+
+	padding:10px 12px;
+	border:1px solid #d7d7d7;
+	color:#d7d7d7;
+}
+.tags{
+	width:23%;
+
+}
+.tags-buttons-row{
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.tags-buttons-row a:hover{
+	background: #18cfab;
+}
+.tags-title{
+	margin-bottom: 50px;
+}
+/*-----------------------------footer end------------------------------------*/
+
+
 
 
 
