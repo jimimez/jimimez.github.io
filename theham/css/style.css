@@ -32,10 +32,14 @@ img{
     font-size: 36px;
     color: #4e4e4e;
 }
-.tabs li{
+.tabs li a{
+	display:block;
 	padding: 22px 28px;
 	cursor: pointer;
 	border: 1px solid #ebebeb;
+}
+.tabs li{
+	border-top:3px solid transparent;
 }
 
 /*-----------------------------header------------------------------------*/
@@ -88,11 +92,14 @@ nav ul li:last-child{
 button{
 
 	padding:0;
-	margin-top:30px;
 	border:none;
 	outline:none;
 	background: none;
 	cursor:pointer;
+}
+.header-search-button{
+	margin-top:30px;
+
 }
 
 .search-button{
@@ -445,7 +452,9 @@ margin:0 auto;
 	color:#18cfab;
 	border-top:3px solid #18cfab;
 }
+.work-menu-list li{
 
+}
 /*-----------------------------work end------------------------------------*/
 
 /*-----------------------------service------------------------------------*/
@@ -932,7 +941,7 @@ background: #18cfab;
 	margin-right: 10px;
 }
 .purchase-now-button{
-	margin-top:10px;
+	margin-top:50px;
 }
 .purchase-now-content{
 	padding-left: 60%;
