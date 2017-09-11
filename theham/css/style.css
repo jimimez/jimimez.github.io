@@ -111,6 +111,7 @@ nav a:hover{
 .border{
 	border-bottom: 1px solid #18cfab;
 }
+
 /*-----------------------------header end------------------------------------*/
 
 /*-----------------------------home------------------------------------*/
@@ -175,6 +176,7 @@ position: relative;
 	width:170px;
 	height:103px;
 	background: #1f1f1f;
+	background-image: url(../images/headerslide.png);
 }
 .slider-buttons{
 	display:flex;
@@ -810,7 +812,23 @@ background: #18cfab;
 	background: #18cfab;
 	color:white;
 }
-
+.people-circle-in{
+	background-image: url(../images/people.png);
+	background-position: center center;
+	background-size: 99px 99px;
+}
+.people-select .people-circle-small:nth-child(2) .people-circle-small-in{
+	background-image: url(../images/people1.png);
+}
+.people-select .people-circle-small:nth-child(3) .people-circle-small-in{
+	background-image: url(../images/people2.png);
+}
+.people-select .people-circle-small:nth-child(4) .people-circle-small-in{
+	background-image: url(../images/people3.png);
+}
+.people-select .people-circle-small:nth-child(5) .people-circle-small-in{
+	background-image: url(../images/people4.png);
+}
 /*-----------------------------feedback end------------------------------------*/
 
 /*-----------------------------team------------------------------------*/
@@ -959,7 +977,7 @@ background: #18cfab;
 	padding:124px 0;
 	justify-content: space-between;
 }
-.map{
+#gmap_canvas{
 	max-width:692px;
 	width:62%;
 	height: 554px;
@@ -1031,6 +1049,15 @@ h3 span{
 	width:77px;
 	height:66px;
 	background-color: #959595; 
+}
+.recent-post-item:nth-child(2) .recent-post-image{
+	background-image: url(../images/recent-post-image1.png);
+}
+.recent-post-item:nth-child(3) .recent-post-image{
+	background-image: url(../images/recent-post-image2.png);
+}
+.recent-post-item:nth-child(4) .recent-post-image{
+	background-image: url(../images/recent-post-image3.png);
 }
 .recent-post h4, .tags-title, .newsletter, .flickefeed-title {
 	color:white;
@@ -1129,6 +1156,24 @@ h3 span{
 }
 .flickefeed{
 	width:12%;
+}
+.flickefeed-row:nth-child(2) .flicke-image:nth-child(1){
+	background-image: url(../images/flicke-image1.png);
+}
+.flickefeed-row:nth-child(2) .flicke-image:nth-child(2){
+	background-image: url(../images/flicke-image2.png);
+}
+.flickefeed-row:nth-child(3) .flicke-image:nth-child(1){
+	background-image: url(../images/flicke-image3.png);
+}
+.flickefeed-row:nth-child(3) .flicke-image:nth-child(2){
+	background-image: url(../images/flicke-image4.png);
+}
+.flickefeed-row:nth-child(4) .flicke-image:nth-child(1){
+	background-image: url(../images/flicke-image5.png);
+}
+.flickefeed-row:nth-child(4) .flicke-image:nth-child(2){
+	background-image: url(../images/flicke-image6.png);
 }
 
 /*-----------------------------footer end------------------------------------*/
