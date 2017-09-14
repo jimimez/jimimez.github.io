@@ -5,14 +5,24 @@ src:url("../fonts/Montserrat-Bold.eot?") format("eot"),
     url("../fonts/Montserrat-Bold.woff") format("woff"),
     url("../fonts/Montserrat-Bold.ttf") format("truetype"),
     url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
-
-font-family: 'Montserrat-Light';
+}
+@font-face{
+	font-family: 'Montserrat-Light';
 src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),  
      url('../fonts/Montserrat-Light.woff') format('woff'), 
      url('../fonts/Montserrat-Light.ttf')  format('truetype'), 
      url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
      font-weight:normal;
      font-style:normal;
+}
+@font-face {
+	font-family:"Montserrat-Regular";
+	src:url("../fonts/Montserrat-Regular.eot?") format("eot"),
+	url("../fonts/Montserrat-Regular.woff") format("woff"),
+	url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+	url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
 }
 /*-----------------------------fonts end------------------------------------*/
 .flex{
@@ -31,12 +41,14 @@ img{
 	text-align: center;
     font-size: 36px;
     color: #4e4e4e;
+    font-family: "Montserrat-Regular";
 }
 .tabs li a{
 	display:block;
 	padding: 22px 28px;
 	cursor: pointer;
 	border: 1px solid #ebebeb;
+	font-family: "Montserrat-Regular";
 }
 .tabs li{
 	border-top:3px solid transparent;
@@ -47,6 +59,7 @@ img{
 header{
 	background: #44433e;
 	/*padding:25px 0;*/
+	font-family: "montserrat-bold";
 }
 
 .navlink-hover-border{
@@ -119,6 +132,7 @@ nav a:hover{
 	background: #3c3c3c;
 position: relative;
 	padding:245px 0;
+	font-family: "montserrat-bold";
 }
 
 .home-title1{
@@ -145,6 +159,7 @@ position: relative;
 	text-align: center;
 	font-size: 34px;
 	margin-top: 45px;
+	font-family: "Montserrat-Light";
 }
 
 .buttons a{
@@ -155,6 +170,7 @@ position: relative;
 	color:#ffffff;
 	border-radius: 5px;
 	background: #18cfab;
+	font-family: "montserrat-bold";
 }
 .home-buttons a:nth-child(1){
  background: #18cfab;
@@ -237,6 +253,9 @@ position: relative;
 	background-image:  url(../images/comp.png);
 	
 }
+.option{
+	font-family: "montserrat-bold";
+}
 
 /*-----------------------------4 option end------------------------------------*/
 
@@ -244,6 +263,7 @@ position: relative;
 .features-item p{
  	font-size: 14px;
  	color:#777777;
+ 	font-family: "Montserrat-Light";
 }
 .features-item{
 	
@@ -280,6 +300,7 @@ position: relative;
 }
 .features-item-title span{
 	margin:auto 0;
+	font-family: "Montserrat-Bold";
 }
 .features-item-title img{
 	margin-right:20px;
@@ -309,7 +330,7 @@ position: relative;
 	padding-bottom: 95px;
 }
 .about-title{
-	font-size: 35px;
+	font-size: 34px;
 	color:white;
 	text-align: center;
 }
@@ -365,6 +386,7 @@ margin:0 auto;
 }
 .skil-level{
 	padding: 16px 0 16px 17px;
+	font-family: "Montserrat-Regular";
 }
 .about-nav-ul a:hover{
 	border-top:1px solid #18cfab;
@@ -414,6 +436,7 @@ margin:0 auto;
 	background-image: url(../images/plus.png);
 	background-repeat: no-repeat;
 	background-position:20px center;
+	font-family: "Montserrat-Bold";
 }
 .button-block{
 	display: flex;
@@ -438,11 +461,13 @@ margin:0 auto;
 	font-size: 14px;
 	color:#18cfab;
 	margin-top: 33px;
+	font-family: "montserrat-bold";
 }
 .work-item1-title2{
 	color: #8a8a8a;
 	font-size: 12px;
 	margin-top: 15px;
+	font-family: "Montserrat-Light";
 }
 .work-item1-icons{
 	margin-top: 43px;
@@ -479,9 +504,10 @@ margin:0 auto;
 }
 .tab-content-text{
 	width: 800px;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 11px;
+    line-height: 18px;
     color:#8d8d8d;
+    font-family: "Montserrat-Light";
 }
 .services-list li:hover span{
 	color:white;
@@ -496,6 +522,8 @@ margin:0 auto;
 	cursor: pointer;
 	border: 1px solid #ebebeb;
 	display: block;
+	font-family: "Montserrat-Regular";
+	font-size: 13px;
 }
 .services-list li img{
 	position: absolute;
@@ -521,18 +549,21 @@ padding-bottom: 12px;
 	color:#18cfab;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 34px;
+	font-size: 32px;
 	padding-top: 126px;
+	font-family: "Montserrat-Bold";
 }
 .purchase p:nth-child(2){
 	font-size: 14px;
 	text-align: center;
 	margin-top: 30px;
 	color:#8d8d8d;
+	font-family: "Montserrat-Regular";
 }
 .purchase-button{
 	text-align: center;
 	margin-top: 76px;
+	font-family: "Montserrat-Bold";
 }
 /*-----------------------------purchase end------------------------------------*/
 
@@ -556,11 +587,13 @@ padding-bottom: 12px;
 .breaking-news-title p:nth-child(1){
 	color:#717171;
 	font-weight: bold;
+	font-family: "Montserrat-Bold";
 }
 .breaking-news-title p:nth-child(2){
 	color:#777777;
 	font-size: 14px;
 	margin-top: 15px;
+	font-family: "Montserrat-Light";
 }
 .breaking-news-item:nth-child(n+5){
 	margin-top:26px;
@@ -579,6 +612,7 @@ text-align: center;
 }
 .news-date p:nth-child(2){
 	margin-top: 5px;
+	font-family: "Montserrat-Regular";
 }
 .breaking-news-item:hover .news-date{
 	background: #18cfab;
@@ -652,9 +686,10 @@ margin-top: 10px;
 .fan-fact-item-title p:nth-child(1){
 	color:white;
 	font-size: 30px;
+	font-family: "Montserrat-Regular";
 }
 .fan-fact-item-title p:nth-child(2){
-	
+	font-family: "Montserrat-Light";
 	font-size: 14px;
 }
 .fun-fact-item:nth-child(2n+1) .fan-fact-item-title p:nth-child(2){
@@ -688,6 +723,7 @@ margin-top: 10px;
 	padding: 20px 0 11px 0;
 	border-top: 1px solid #e5e6e7;
 	border-bottom: 1px solid #e5e6e7;
+	font-family: "Montserrat-Regular";
 }
 .pricing-table-col div:last-child a{
 display:inline-block;
@@ -695,6 +731,7 @@ display:inline-block;
 	background: #2e4a5b;
 	color: white;
 	border-radius: 3px;
+	font-family: "Montserrat-Bold";
 }
 .pricing-table-col div:last-child{
 	padding:24px 0;
@@ -704,15 +741,17 @@ display:inline-block;
 	color:#717171;
 	text-transform: uppercase;
 	font-weight: bold;
-
+	font-family: "Montserrat-Bold";
 }
 .price{
 	font-size: 39px;
 	color: white;
+	font-family: "montserrat-bold";
 }
 .pricing-table-col div:nth-child(2){
 	background: #2e4a5b;
 	color: #ebecee;
+	font-family: "Montserrat-Light";
 }
 .pricing-table-col:hover div:nth-child(2){
 background: #18cfab;
@@ -747,14 +786,17 @@ background: #18cfab;
 	text-align: center;
 	color: #a0a2a4;
 	line-height: 25px;
+	font-family: "Montserrat-Light";
 }
 .people p:nth-child(1){
 	text-transform: uppercase;
 	color:#18cfab;
 	margin-top: 44px;
+	font-family: "Montserrat-Bold";
 }
 .people p:nth-child(2){
 	font-size: 13px;
+	font-family: "Montserrat-Light";
 }
 .people-circle{
 	border-radius: 50%;
@@ -854,12 +896,13 @@ background: #18cfab;
 .team-title p:first-child{
 	color:white;
 	font-size: 13px;
-
+	font-family: "Montserrat-Bold";
 }
 .team-title p:nth-child(2){
 	color:#18cfab;
 	font-size: 11px;
 	margin-top: 12px;
+	font-family: "Montserrat-Light";
 }
 .team-title{
 	padding:15px;
@@ -941,12 +984,14 @@ background: #18cfab;
 	text-align: center;
 	font-size: 42px;
 	text-transform: uppercase;
+	font-family: "montserrat-bold";
 }
 .purchase-now-title p:nth-child(2){
 	color:#18cfab;
 	text-align: center;
 	font-size: 38px;
 	text-transform: uppercase;
+	font-family: "Montserrat-Regular";
 }
 .purchase-now-list-item{
 	margin-top:10px;
@@ -954,6 +999,7 @@ background: #18cfab;
 .purchase-now-list-item span{
 	margin:auto 0;
 	color:#888f93;
+	font-family: "Montserrat-Light";
 }
 .purchase-now-list-item img{
 	margin-right: 10px;
@@ -977,7 +1023,7 @@ background: #18cfab;
 	padding:124px 0;
 	justify-content: space-between;
 }
-#gmap_canvas{
+#map{
 	max-width:692px;
 	width:62%;
 	height: 554px;
@@ -993,6 +1039,7 @@ input{
 	border:1px solid #cddbd9;
 	box-sizing: border-box;
 	padding:20px 0 20px 15px;
+	font-family: "Montserrat-Light";
 }
 form{
 	margin-top: 80px;
@@ -1005,6 +1052,7 @@ form button{
 	padding:20px 0;
 	border-radius: 5px;
 	margin-top: 17px;
+	font-family: "montserrat-bold";
 }
 .textarea{
 	padding-bottom: 130px;
@@ -1023,10 +1071,12 @@ form button{
 h3{
 	font-size:35px;
 	color:white;
+	font-family: "Montserrat-Regular";
 }
 h3 span{
 	text-transform: uppercase;
 	color:#18cfab;
+	font-family: "Montserrat-Bold";
 }
 .theham{
 	color:#848688;
