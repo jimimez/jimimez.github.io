@@ -1,0 +1,928 @@
+body{
+	background:black;
+	font-family: verdana;
+}
+
+.wrapper{
+	width:1400px;
+	margin:0 auto;
+}
+
+.topmenu{
+	width:1400px;
+	height:33px;
+	background:#3d3d3d;
+}
+
+.topmenu-in{
+	width:1076px;
+	margin:0 auto;
+}
+
+.topmenu-left{
+	width:270px;
+	float:left;
+}
+
+.topmenu-left a{
+	display:block;
+	float:left;
+	width:90px;
+	text-decoration:none;
+	color:#dcdcdc;
+	text-transform:uppercase;
+	font-size:8px;
+	padding:12px 0 12px 0;
+}
+
+.drop-img{
+	margin-left:4px;
+}
+
+.topmenu-right{
+	width:137px;
+	float:right;
+}
+
+.topmenu-right a{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#dcdcdc;
+	font-size:8px;
+	display:block;
+	padding:12px 0 12px 0;
+	float:left;
+}
+
+.or{
+	display:block;
+	float:left;
+	font-size:8px;
+	width:14px;
+	padding:12px 0 12px 0;
+	margin-right:7px;
+	margin-left:7px;
+	text-align:center;
+	text-transform: uppercase;
+	font-family: verdana;
+}
+
+.logo{
+	height:119px;
+	background: #ffffff
+}
+
+.logo-in{
+	width:1076px;
+	height:119px;
+	margin:0 auto;
+	background: url(images/aybx.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.search-area{
+	width:683px;
+	height:39px;
+	float:right;
+	margin:40px 0;
+}
+
+.allcategory{
+	width:120px;
+	float:left;
+	border:1px solid #e4e4e4;
+	padding:14px 0 14px 12px;
+	color:#a3a3a3;
+	font-size:9px;
+	text-transform: capitalize;
+
+}
+
+.drop2{
+	margin-left:37px;
+
+
+}
+
+.search-field{
+	padding:14px 96px 14px 12px;
+	font-size:9px;
+	border:1px solid #e4e4e4;
+	float:left;
+	text-transform: capitalize;
+	font-family: verdana;
+}
+
+.search-button{
+	font-size:9px;
+	padding:15px 17px 15px 16px;
+	border:none;
+	background:#477087;
+	color:white;
+	float:left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.view-cart{
+	width:200px;
+	padding:12px 17px 12px 16px;
+	
+	float:right;
+	background:#477087;
+	font-size:9px;
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.cart{
+	margin-right:8px;
+}
+
+.drop3{
+	margin-left:7px;
+}
+
+.main-menu{
+	background:#f9f9f9;
+border:1px solid #eaeaea;
+	height:62px;
+	padding:0;
+	margin:0;
+}
+
+.main-menu a{
+	padding:25px 26px 24px 26px;
+	display:block;
+	float:left;
+	font-size:10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#434242;
+	border-right:1px solid #eaeaea;
+	font-weight: bold;
+	font-family: verdana;
+
+
+}
+
+.main-menu a:nth-child(1){
+	margin-left:161px;
+	padding-left:50px;
+	padding-right:40px;
+	border-left:1px solid #eaeaea;
+}
+
+.main-menu-in{
+	height:61px;
+	
+	margin:0 auto;
+	padding:0;
+}
+
+.main-menu a:hover{
+	background:#404c61;
+	color:white;
+}
+
+.clear{
+	clear:both;
+}
+
+.slider{
+	height:408px;
+	background:url(images/slider.png);
+}
+
+.slider-buttons{
+	width:1076px;
+	margin:0 auto;
+	position: relative;
+    top: 277px;
+}
+
+.slider-button{
+	display:inline-block;
+	text-decoration:none;
+	color:#dce3e7;
+	text-transform:uppercase;
+	font-size:10px;
+	float:left;
+	border:2px solid #94aebc;
+	padding:13px 15px;
+}
+
+.slider-buttons a:nth-child(2){
+	margin-left:4px;
+}
+
+.slider-dots{
+	width:1076px;
+	margin:0 auto;
+	position:relative;
+	top:325px;
+}
+
+.slider-dot{
+	display:inline-block;
+	width:25px;
+	height:7px;
+	background:#c9cdd8;
+	float:right;
+}
+
+.slider-dots a:nth-child(3){
+	margin-right:2px;
+}
+.slider-dots a:nth-child(2){
+	margin-right:2px;
+	background: #f7f7f7;
+}
+
+.info-panel{
+	padding:7px 0 7px 0;
+	background:#384356;
+}
+
+.info-panel-in{
+	width:1076px;
+	margin:0 auto;
+	
+}
+
+.info-panel-in a{
+	display:inline-block;
+	padding:25px 0 25px 0;
+	margin-left:99px;
+	text-decoration: none;
+	color:#ffffff;
+	font-size:10px;
+	text-transform:uppercase;
+	
+
+	
+}
+
+.info-panel-in span{
+	margin-left:34px;
+}
+
+
+
+.info-panel-in a:nth-child(1){
+margin-left:0;
+	background:url(images/shiping.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+}
+
+.info-panel-in a:nth-child(2){
+
+	background:url(images/money.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+}
+
+.info-panel-in a:nth-child(3){
+
+	background:url(images/return.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+}
+
+.info-panel-in a:nth-child(4){
+	margin-left:0;
+	float:right;
+	background:url(images/customer.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+}
+
+.batman{
+	height:213px;
+	background-color:#fcfcfc;
+	background-image:url(images/batman.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.batman-buttons{
+	width:1004px;
+	margin:0 auto;
+	position:relative;
+	top:113px;
+}
+
+.batman-buttons a{
+	display:inline-block;
+	text-decoration:none;
+	color:#ffffff;
+	font-size:9px;
+	padding:11px 10px 10px 10px;
+	border:1px solid #ffffff;
+	text-transform: uppercase;
+}
+
+.batman-buttons a:nth-child(n+3){
+	float:right;
+}
+
+.batman-buttons a:nth-child(4){
+margin-right:6px;
+}
+
+.content{
+	padding:39px 162px 27px 162px;
+	background:#f9f9f9;
+}
+
+.content-in{
+	width:1076px;
+	margin:0 auto;
+}
+
+.game-poster{
+	width:223px;
+	height:297px;
+	float:left;
+	background:url(images/callofduty.png);
+	padding:13px;
+}
+
+.featured{
+	color:#727778;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	position:relative;
+	left:16px;
+	top:22px;
+}
+
+.game-poster span:nth-child(n+2){
+
+	color:white;
+	font-size:15px;
+	font-weight: bold;
+	border:1px solid #afb2b3;
+	border-radius: 1px;
+	padding:8px;
+}
+
+.game-poster span:nth-child(2){
+	position:relative;
+	left:108px;
+	top:12px;
+}
+
+.game-poster span:nth-child(3){
+	position:relative;
+	left:52px;
+	top:58px;
+	padding-right:14px;
+}
+
+.poster-text{
+	color:white;
+	text-transform: uppercase;
+	font-size:10px;
+	position:relative;
+	top:226px;
+}
+
+.poster-text p{
+	margin:0;
+	padding:0;
+}
+
+.game-item{
+	float:left;
+	background:#fcfcfc;
+	padding: 7px 38px 34px 37px;
+}
+
+.game-title{
+	color:#404040;
+	text-transform: capitalize;
+	font-size:8px;
+	margin-top:57px;
+}
+
+.game-price{
+	color:red;
+	font-size:11px;
+	text-transform: uppercase;
+}
+
+.game-oldprice{
+	color:#686868;
+	font-size:11px;
+	text-decoration: line-through;
+}
+
+.game-image{
+	margin-top:24px;
+}
+
+.game-item:nth-child(2){
+	border-left:1px solid #f1f1f1;
+	border-right:1px solid #f1f1f1;
+}
+
+.game-item:nth-child(4){
+	 border-left:1px solid #f1f1f1;
+}
+
+.games-container{
+	box-shadow: 3px 3px 2px #f2f2f2;
+	float:left;
+}
+
+.console-container{
+	width:1076px;
+	margin:0 auto;
+	margin-top:34px;
+}
+
+.console-container-in{
+	width:531px;
+	float:left;
+}
+
+.console-header{
+	background:black;
+	color:#e5e5e5;
+}
+
+.console-header{
+	font-size:9px;
+	padding:18px 0 16px 16px;
+	text-transform:uppercase;
+}
+
+.console-image{
+	height:150px;
+	
+}
+
+.console-text div{
+	color: white;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.console-text div:nth-child(2){
+	font-size:9px;
+}
+
+.console-text{
+	padding-top: 32px;
+}
+
+.console-image a{
+	display:inline-block;
+	text-decoration:none;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:9px;
+	float:left;
+	border:1px solid #ffffff;
+	padding:11px 12px 10px 11px;
+	margin-top:14px;
+}
+
+.console-image a:nth-child(3){
+	margin-left:6px;
+}
+
+.ps{
+	background:url(images/ps.png);
+}
+
+.xbox{
+	background:url(images/xbox.png);
+}
+
+.console-tab{
+	height:44px;
+}
+
+.console-tab a{
+	display: inline-block;
+	color: #8d8d8d;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 13px;
+    background: #ffffff;
+    font-size: 9px;
+    border-top:2px solid #48b108;
+}
+
+.consoles-item{
+	float:left;
+	border:1px solid #efefef;
+	padding:7px 6px 16px 14px;
+}
+
+.console-text{
+	color:#5b5b5b;
+	font-size:7px;
+	text-transform: capitalize;
+}
+
+.consoles-item:nth-child(n+2){
+	margin-left:8px;
+}
+
+.console-price{
+	font-size:12px;
+	color:#e03737;
+	font-weight: bold;
+}
+
+.sale{
+	padding-left:99px;
+	
+}
+
+.consoles{
+	background:#ffffff;
+	padding:18px 12px 17px 15px;
+}
+
+.consoles:nth-child(2){
+	float:right;
+}
+
+.consoles{
+	float:left;
+}
+
+.console-type{
+	width:1076px;
+	margin:0 auto;
+}
+
+.console-type-menu{
+	float:left;
+	border-right: 2px solid #484848;
+}
+
+.console-type-item{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: bold;
+	color: #4c4c4c;
+	padding:10px 0 10px 16px;
+	background:#ffffff;
+	width:123px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+
+}
+
+.console-type-item:nth-child(-n+5){
+	margin-bottom: 4px;
+}
+
+.console-type{
+	margin-top:24px;
+}
+
+.console-type-item:hover{
+	background:#484848;
+	color:#ffffff;
+}
+
+.console-type-game{
+	width:152px;
+	height:171px;
+	background:url(images/dota.png);
+	float:left;
+	padding-left:15px;
+}
+
+.console-type-game:nth-child(n+2){
+	margin-left:16px;
+}
+
+.console-type-container{
+	padding:17px 17px 17px 19px;
+	background:white;
+	float:left;
+}
+
+.console-type-game-text div:nth-child(1){
+	font-size:11px;
+	color:white;
+	text-transform:uppercase;
+}
+
+.console-type-game-text div:nth-child(2){
+	font-size:8px;
+	color:#9a9a9c;
+	text-transform:uppercase;
+}
+
+.console-type-game-text{
+	padding-top:96px;
+	font-weight: bold;
+}
+
+.console-type-game-buttons{
+	margin-top:11px;
+}
+
+.features{
+	width:100%;
+	height:379px;
+	background:white;
+	
+}
+
+.features-in{
+	height:379px;
+	width:871px;
+	margin:0 auto;
+	background:url(images/jin.png);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	padding-left:205px;
+}
+
+.features-text{
+	font-size:22px;
+	color:#010101;
+	text-transform:uppercase;
+	
+	padding-top:77px;
+}
+
+.feature-text{
+	padding-left:15px;
+	border-left:5px solid #e6e6e6;
+	color:#6d6d6d;
+	float:left;
+margin-top:33px;
+}
+
+.feature-text:nth-child(n+2){
+	margin-left:40px;
+}
+
+.feature-title{
+	text-transform: uppercase;
+	color:#000000;
+	font-size:13px;
+	font-weight: bold;
+	margin-bottom:14px;
+	padding-left:20px;
+
+}
+
+.icon-monitor{
+	background:url(images/monitor.png);
+	background-repeat:no-repeat;
+	background-position: left center;
+}
+
+.icon-custom{
+	background:url(images/custom.png);
+	background-repeat:no-repeat;
+	background-position: left center;
+}
+
+.icon-feature-cart{
+	background:url(images/feature-cart.png);
+	background-repeat:no-repeat;
+	background-position: left center;
+}
+
+.feature-text span{
+	font-size:11px;
+}
+
+.feature-text:nth-child(2){
+	border-left:5px solid #51b226;
+}
+
+.all-features a{
+	color:#4aa422;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.all-features{
+	padding-top: 37px;
+    padding-left: 86px;
+}
+
+.karusel{
+	padding:44px 162px;
+	background:#f9f9f9;
+}
+
+.karusel-image{
+	display:inline-block;
+}
+
+.contact{
+	padding: 35px 162px;
+    background: url(images/infobackground.png);
+}
+
+.contact-col:nth-child(1) .contact-item:nth-child(1){
+     width:202px;
+     height:48px;
+     background:url(images/aybx2.png);
+     background-repeat: no-repeat;
+}
+
+.contact-col{
+	float:left;
+}
+
+.contact-col:nth-child(n+2){
+	margin-left:50px;
+}
+
+.infotext-big{
+	font-size:10px;
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.infotext-small{
+	font-size:7px;
+	color:white;
+	text-transform: uppercase;
+}
+
+.contact-item{
+	
+	padding:14px 0 14px 60px;
+	 
+
+}
+
+.contact-col:nth-child(2) .contact-item:nth-child(1){
+	background:url(images/phone.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(2) .contact-item:nth-child(2){
+	background:url(images/mail.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(2) .contact-item:nth-child(3){
+	background:url(images/skype.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(3) .contact-item:nth-child(1){
+	background:url(images/location.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(3) .contact-item:nth-child(2){
+	background:url(images/twiter.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(3) .contact-item:nth-child(3){
+	background:url(images/facebook.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(4) .contact-item:nth-child(1){
+	background:url(images/youtube.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(4) .contact-item:nth-child(2){
+	background:url(images/rss.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.contact-col:nth-child(4) .contact-item:nth-child(3){
+	background:url(images/bookmark.png);
+	background-repeat: no-repeat;
+	background-position:left center;
+
+}
+
+.footer-link-col a{
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 9px;
+	color:#688a94;
+	margin-top:11px;
+	width:237px;
+}
+
+.footer-link-container{
+	padding:39px 162px;
+	background:#f9f9f9;
+}
+
+.footer-link-col{
+	float:left;
+
+}
+
+.footer-link-col:nth-child(n+2){
+	margin-left:20px;
+}
+
+.footer-link-title{
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.footer{
+	background:#f3f3f3;
+	font-size: 9px;
+	color:#848484;
+	text-transform: uppercase;
+	padding:22px 162px;
+	border-top:1px solid #eeeeee;
+}
+
+.footer-text{
+	float:left;
+}
+
+.footer-images{
+	float:right;
+}
+
+.footer-image{
+	width:44px;
+	height:22px;
+	float:left;
+}
+
+.footer-image:nth-child(1){
+	background:url(images/visa.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+.footer-image:nth-child(2){
+	background:url(images/mastercard.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+.footer-image:nth-child(3){
+	background:url(images/paypal.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+.footer-image:nth-child(4){
+	background:url(images/amex.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+.footer-image:nth-child(5){
+	background:url(images/wui.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+.footer-image:nth-child(-n+4){
+	margin-right:26px;
+}
+
