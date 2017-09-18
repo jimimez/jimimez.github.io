@@ -2,7 +2,7 @@ var elementWidth, childCount;
 var activeIndex = 0;
 var speed = 300;
 
-$('doument').ready(function(){
+$('document').ready(function(){
 
 	elementWidth = $('.slide').width();
 	childCount = $('.slide').length;
