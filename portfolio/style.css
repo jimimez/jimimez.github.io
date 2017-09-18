@@ -1,7 +1,13 @@
 .item{
 	width:200px;
 	height:400px;
+	border:1px solid black;
 }
 .item:hover{
 	opacity: 0.5;
+}
+.container{
+	width:90%;
+	display: flex;
+	justify-content: center;
 }
