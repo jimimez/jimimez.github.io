@@ -195,11 +195,17 @@ position: relative;
 	display: inline-block;
     vertical-align: top;
 }
+
+.slider-container{
+	position:absolute;
+}
 .preview-picture{
 	width:170px;
 	height:103px;
 	background: #1f1f1f;
 	background-image: url(../images/headerslide.png);
+	overflow: hidden;
+	position: relative;
 }
 .slider-buttons{
 	display:flex;
