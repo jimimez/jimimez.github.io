@@ -131,7 +131,7 @@ nav a:hover{
 .home{
 	background: #3c3c3c;
 position: relative;
-	padding:245px 0;
+	padding:245px 0 100px 0;
 	font-family: "montserrat-bold";
 }
 
