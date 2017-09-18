@@ -587,16 +587,21 @@
 		<div class="contact-container flex">
 			<div id="map"><!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:554px;width:692px;'><div id='gmap_canvas' style='height:554px;width:692px;'></div><div><small><a href="http://embedgooglemaps.com">Click here to generate your map!</a></small></div><div><small><a href="https://www.amazon.com/gp/product/B073GVZSRG/ref=s9_acsd_newrz_hd_bw_b3IfBi7_c_x_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-4&pf_rd_r=2ZP7WR5QJ3XJW43GWD6V&pf_rd_t=101&pf_rd_p=1c652d50-4986-5dac-bbfa-2c83eae8e6b6&pf_rd_i=3024189011">Adjustable Front Pet Dog Cat Carrier Bag</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script> --></div>
 			<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.12),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUg0rCg4shcOXPpmK0QOzyyjQarsZvaZY=myMap"></script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUg0rCg4shcOXPpmK0QOzyyjQarsZvaZY&callback=initMap">
+    </script>
 			<div class="form">
 				<div class="title">Keep In Touch</div>
 				<div class="lines">
