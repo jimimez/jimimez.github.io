@@ -180,13 +180,20 @@ position: relative;
  background: #00cbf6;
 }
 .home-buttons{
-	text-align: center;
+	/*text-align: center;*/
 	margin-top: 142px;
 }
+.buttons-in{
+	margin-left: 50%;
+    transform: translateX(-50%);
+}
 .slider-nav{
-	position:absolute;
+	margin-right: 100px;
+	float:right;
 	right:204px;
 	bottom:122px;
+	display: inline-block;
+    vertical-align: top;
 }
 .preview-picture{
 	width:170px;
@@ -201,6 +208,9 @@ position: relative;
 	margin-top: 20px;
 	font-weight: bold;
 	font-size: 40px;
+}
+.buttons-in{
+	display: inline-block;
 }
 .slider-button{
 	width:64px;
@@ -1067,6 +1077,7 @@ form button{
 .footer{
 	padding:120px 0;
 	background-color:#1c2b33;
+	font-family: "montserrat-light";
 }
 h3{
 	font-size:35px;
@@ -1082,6 +1093,7 @@ h3 span{
 	color:#848688;
 	font-size: 12px;
 	width:20%;
+	font-family: "montserrat-light";
 }
 .theham p{
 	line-height: 20px;
@@ -1114,9 +1126,11 @@ h3 span{
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: bold;
+	font-family: "montserrat-bold";
 }
 .recent-post-title{
 	margin-bottom: 50px;
+	font-family: "montserrat-bold";
 }
 .recent-post-item{
 	color:#848688;
@@ -1128,6 +1142,7 @@ h3 span{
 }
 .recent-post{
 	width:29%;
+	font-family: "montserrat-light";
 }
 .recent-post-text{
 	margin-left: 10px;
