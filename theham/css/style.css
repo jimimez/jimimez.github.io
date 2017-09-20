@@ -77,7 +77,7 @@ header{
 	margin:0 auto;
 	justify-content: space-between;
 }
-nav li:hover .navlink-hover-border{
+nav a:hover .navlink-hover-border{
 	background: #1c9d86;
 }
 nav a{
