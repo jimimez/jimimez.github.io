@@ -172,11 +172,12 @@ position: relative;
 	background: #18cfab;
 	font-family: "montserrat-bold";
 }
-.home-buttons a:nth-child(1){
+.home-buttons a{
  background: #18cfab;
  margin-right: 28px;
+ transition: all 1s;
 }
-.home-buttons a:nth-child(2){
+.home-buttons a:hover{
  background: #00cbf6;
 }
 .home-buttons{
@@ -225,6 +226,8 @@ position: relative;
 	text-align: center;
 	line-height: 64px;
 	cursor: pointer;
+	transition: all 1s;
+
 }
 .slider-button:hover{
 	background: #18cfab;
@@ -496,7 +499,7 @@ margin:0 auto;
 	border-top:3px solid #18cfab;
 }
 .work-menu-list li{
-
+	transition: all 1s;
 }
 /*-----------------------------work end------------------------------------*/
 
@@ -529,9 +532,13 @@ margin:0 auto;
 	color:white;
 	background: #18cfab;
 	border-bottom: none;
+	transition: all 1s;
 }
 .services-list li:hover img{
- display:block;
+ /*display:block;*/
+ opacity: 1;
+ visibility: visible;
+
 }
 .services-list span{
 	padding: 22px 28px;
@@ -546,7 +553,11 @@ margin:0 auto;
 	bottom: 2px;
 	left:50%;
 	transform: translateX(-50%);
-	display: none;
+	/*display: none;*/
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+
 }
 .services-list li{
 	position: relative;
@@ -604,6 +615,7 @@ padding-bottom: 12px;
 	color:#717171;
 	font-weight: bold;
 	font-family: "Montserrat-Bold";
+	transition: all 1s;
 }
 .breaking-news-title p:nth-child(2){
 	color:#777777;
@@ -622,6 +634,8 @@ padding-bottom: 12px;
 	top:0;
 	right:0;
 	text-transform: capitalize;
+	transition: all 1s;
+
 }
 .news-date p{
 text-align: center;
@@ -730,6 +744,7 @@ margin-top: 10px;
 	border-radius: 10px;
 	border: 1px solid #e5e6e7;
 	border-radius: 5px;
+	transition: all 1s;
 }
 .pricing-table-col div{
 	width:100%;
@@ -748,6 +763,7 @@ display:inline-block;
 	color: white;
 	border-radius: 3px;
 	font-family: "Montserrat-Bold";
+	transition: all 1s;
 }
 .pricing-table-col div:last-child{
 	padding:24px 0;
@@ -758,6 +774,8 @@ display:inline-block;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: "Montserrat-Bold";
+	transition: all 1s;
+
 }
 .price{
 	font-size: 39px;
@@ -768,6 +786,7 @@ display:inline-block;
 	background: #2e4a5b;
 	color: #ebecee;
 	font-family: "Montserrat-Light";
+	transition: all 1s;
 }
 .pricing-table-col:hover div:nth-child(2){
 background: #18cfab;
@@ -777,6 +796,7 @@ color: #18cfab;
 background-image: url(../images/offer.png);
 background-repeat: no-repeat;
 background-position: top right;
+back
 }
 .pricing-table-col:hover div:last-child a{
 background: #18cfab;
@@ -908,6 +928,7 @@ background: #18cfab;
 }
 .team-social{
 	border-top: 1px solid #bbf1e6;
+	transition: all 1s;
 }
 .team-title p:first-child{
 	color:white;
@@ -919,10 +940,12 @@ background: #18cfab;
 	font-size: 11px;
 	margin-top: 12px;
 	font-family: "Montserrat-Light";
+	transition: all 1s;
 }
 .team-title{
 	padding:15px;
 	box-sizing: border-box;
+	transition: all 1s;
 }
 .team-image{
 	padding-top: 100%;
@@ -942,7 +965,9 @@ background: #18cfab;
 	color: #2e4a5b;
 }
 .team-item:hover .team-image-zoom{
-	display: block;
+	/*display: block;*/
+	visibility: visible;
+	opacity: 1;
 }
 
 .team-image-zoom{
@@ -952,11 +977,14 @@ background: #18cfab;
 	height:56px;
 	border-radius: 50%;
 	border: 3px solid #18d7ab;
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top:50%;
 	left:50%;
 	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s;
 
 }
 
