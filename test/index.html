@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style-home.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -9,7 +10,7 @@
 	<title>mypage</title>
 </head>
 <body>
-<header>
+<header id="header">
 	<div class="container clear">
 		<a class="logo" href=""><img src="images/logo.svg"></a>
 		<nav class="main-navigation">
@@ -21,35 +22,27 @@
 			</ul>
 		</nav>
 
-		<div class="burger">
-						<div class="burger-line"></div>
-						<div class="burger-line"></div>
-						<div class="burger-line"></div>
-					</div>
-					<div class="social-icons search-button"><img class="search" src="images/search.svg"></div>
-		<div class="social">
-					<div class="social-icons"><img class="google" src="images/google-plus.svg"></div><!--
-					--><div class="social-icons"><img class="face" src="images/facebook-icon.svg"></div><!--
-					--><div class="social-icons"><img class="you" src="images/youtube.svg"></div>
+		<div id="burger" onclick="burger()" class="burger">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
 		</div>
-
-
-
-				
+		<div class="social-icons search-button"><img class="search" src="images/search.svg"></div>
+		<div class="social">
+			<div class="social-icons"><img class="google" src="images/google-plus.svg"></div><!--
+			--><div class="social-icons"><img class="face" src="images/facebook-icon.svg"></div><!--
+			--><div class="social-icons"><img class="you" src="images/youtube.svg"></div>
+		</div>				
 	</div>
 </header>
 <section class="slider">
 	<div class="container slider-container">
-		<div class="slider-block">
-			<img class="slide" src="images/banner.jpg">
-		</div>
-		<div class="slider-text">< / HTML ></div>
 		<div class="slider-text2">
 			<div><p>ამბები არ არის ყოველთვის </p></div>
 			<div><p>ერთმნიშვნელოვნად</p></div>
 			<div><p>#000000 </p></div>
 			<div><p>ან</p></div>
-			<div><p>#ffffff</p></div>
+			<div class="flex banner-text-bottom"><span>#ffffff</span><span>< / HTML ></span></div>
 		</div>
 		
 	</div>
