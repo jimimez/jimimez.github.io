@@ -195,6 +195,11 @@ h3{
 
 }
 
+.face-share{
+	float:right;
+	margin-top: 35px;
+}
+
 .article-content p{
 	
 	
@@ -207,6 +212,8 @@ h3{
 	font-family: 'BPGIngiriArial';
 	font-size: 18px;
 }
+
+
 
 /*---------------------featured-------------------------------------*/
 .featured-content{
