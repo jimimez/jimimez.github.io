@@ -121,6 +121,8 @@ header {
     height: 5px;
     background: #363E97;
 }
+
+
 /*---------------------header end--------------------------------*/
 
 /*---------------------slider-------------------------------------*/
@@ -393,6 +395,211 @@ footer div {
 }
 /*---------------------footer end-------------------------------------*/
 
+/*-------------------------news html style-----------------------------------*/
+.nav-position{
+	background: #BDCCD4;
+	line-height: 90px;
+}
+
+.float-left{
+	float:left;
+}
+
+.float-right{
+	float:right;
+}
+.nav-position-in div:nth-child(n+2) a{
+	color:white;
+}
+.nav-position-in div:first-child a{
+color:#363E97;
+}
+
+.nav-position-in div:last-child a{
+	text-decoration: underline;
+}
+
+.nav-position-in{
+	font-size: 22px;
+}
+
+
+
+.nav-position-in img{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.next{
+	font-family: 'BPGIngiriArial';
+	font-size: 18px;
+}
+
+.article-date{
+	width: 60px;
+    height: 60px;
+    color:#363E97;
+    border: 3px solid #BDCCD4;
+    text-align: center;
+}
+
+
+.article-date p:nth-child(1){
+	font-size:34px;
+	margin-top: 5px;
+}
+.article-date p:nth-child(2){
+	font-size:12px;
+}
+
+.article{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+h3{
+
+	line-height: 76px;
+}
+
+.article-img{
+	float:left;
+	margin-right: 20px;
+}
+
+.article-content p:nth-child(n+3){
+	padding-top:20px;
+}
+
+.back{
+	color:white;
+	text-decoration: underline;
+
+}
+
+.face-share{
+	float:right;
+	margin-top: 35px;
+}
+
+.article-content p{
+	
+	
+	font-family: 'BPGIngiriArial';
+	font-size: 18px;
+	color:#333333;
+}
+
+.back{
+	font-family: 'BPGIngiriArial';
+	font-size: 18px;
+}
+/*---------------------------------------------------news html style end--------------------------------------*/
+
+/*-------------------------------------------------contact html style--------------------------------------------*/
+.contact{
+  background: #EE4036;
+}
+
+.contact-container{
+  line-height: 90px;
+  color:white;
+  font-size: 22px;
+}
+
+.map{
+  padding-top:30px;
+  padding-bottom: 30px;
+  background: #E6E6E6;
+}
+
+.container-map{
+  height:461px;
+}
+
+.contact-text{
+  color:white;
+  font-size: 14px;
+  font-family: 'BPGIngiriArial';
+}
+
+.contact-text p:nth-child(3){
+  margin-top: 20px;
+}
+.contact-text p:nth-child(5){
+  margin-top: 20px;
+}
+
+.contact-form-container{
+  background: #363E97;
+  padding-left:100px;
+  padding-top:45px;
+  padding-bottom: 45px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+input {
+  background: none;
+  border:1px solid white;
+  width:630px;
+  height:60px;
+  font-family: 'BPGIngiriArial';
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+
+form {
+  	margin-left:75px;
+}
+
+form p{
+  color:white;
+  font-size: 18px;
+  font-family: 'BPGNinoMtavruli-Bold';
+}
+
+form div:nth-child(n+2){
+  margin-top: 20px;
+}
+
+form div input{
+  margin-top:15px;
+}
+
+form div p{
+  padding-left: 25px;
+}
+
+.massage{
+  height: 100px;
+}
+
+button{
+  font-family: 'BPGNinoMtavruli-Bold';
+  font-size: 18px;
+  padding:15px 30px;
+  background: #EE4036;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+.social-block{
+  height:90px;
+  background: #E6E6E6;
+}
+
+.face-share{
+  float:right;
+margin-top:35px;
+}
+.social-block-container{
+height:100%;
+}
+/*-------------------------------------------------contact html style end--------------------------------------------*/
+
 @media(max-width:1275px) {
 
 	.main-navigation ul {
@@ -426,6 +633,40 @@ footer div {
 		display:block;
 	}
 
+	.hide {
+		display:none;
+	}
+
+	.rotate1{
+		transform: rotate(45deg);
+		transform-origin: 46%;
+	}
+
+	.rotate2{
+		transform: rotate(-45deg);
+		transform-origin: 29%;
+	}
+
+
+
+}
+
+@media(max-width:1140px) {
+	.contact-form-container{
+		flex-direction: column;
+	}
+
+	input {
+		width:90%;
+	}
+
+	form {
+		margin:20px 0 0 0;
+	}
+
+	.contact-form-container {
+		padding-left:10%;
+	}
 }
 
 @media(max-width:851px) {
@@ -439,42 +680,19 @@ footer div {
 }
 
 
-
-/*@media(max-width:1024px){
-
-	.burger{
-		display:block;
-	}
-
-	.main-navigation{
-		display:none;
-	}
-
-	
-
-	.featured-content-left{
-		width:100%;
-	}
-	.featured-content-right{
-		width:100%;
-		margin-top: 20px;
-	}
-
-	.featured-content{
-		flex-direction: column;
-
-	}
-
-	
-
-	.news-item-container{
-
-		justify-content: space-between;
-	}
-}*/
 @media(max-width:600px) {
 	.social{
 		display: none;
+	}
+
+	.menu-active .social {
+		display: block;
+		background: white;
+		position: absolute;
+		top:349px;
+		left:0;
+		width:100%;
+		text-align: center;
 	}
 }
 
@@ -514,6 +732,8 @@ footer div {
 		flex-direction: column;
 
 	}
+
+	
 
 	footer div {
 		flex-direction: column;

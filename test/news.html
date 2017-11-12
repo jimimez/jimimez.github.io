@@ -3,13 +3,15 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style-news.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 
 </head>
 <body>
-	<header>
+	<header id="header">
 	<div class="container clear">
 		<a class="logo" href=""><img src="images/logo.svg"></a>
 		<nav class="main-navigation">
@@ -21,10 +23,10 @@
 			</ul>
 		</nav>
 
-		<div class="burger">
-						<div class="burger-line"></div>
-						<div class="burger-line"></div>
-						<div class="burger-line"></div>
+		<div id="burger" onclick="burger()" class="burger">
+						<div id="line1" class="burger-line"></div>
+						<div id="line2" class="burger-line"></div>
+						<div id="line3" class="burger-line"></div>
 					</div>
 					<div class="social-icons search-button"><img class="search" src="images/search.svg"></div>
 		<div class="social">
@@ -43,14 +45,14 @@
 		<div class="container">
 			<div class="nav-position-in clear">
 				<div class="float-left"><a href="">სიახლეები</a></div>
-				<div class="float-left"><img src="images/arrow.png"></div>
+				<div class="float-left"><img style="display: inline; width:23px;" src="images/arrow.png"></div>
 				<div class="float-left"><a href="">ტიპოგრაფია</a></div>
 				<div class="float-right next"><a href="">შემდეგი</a></div>
 			</div>
 		</div>
 	</div>
 
-	<article>
+	<section class="article">
 	<div class="container">
 		<div class="article-date">
 			<p>18</p><p>მარტი</p>
@@ -81,7 +83,7 @@
          </div>
 	</div>
 		
-	</article>
+	</section>
 
 <div class="nav-position">
 		<div class="container">
