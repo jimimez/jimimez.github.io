@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: rgb(208, 174, 240);
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.todo_item{
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    width:23rem;
+}
+
+.todo_text{
+    background-color: white;
+    padding:5px;
+    width:15rem;
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.delete{
+    background-color: crimson;
+    color:white;
+
+}
+
+.done{
+    background-color: darkgreen;
+    color: white;
+}
+
+.doneTodo{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
