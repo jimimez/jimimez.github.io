@@ -1,4 +1,4 @@
-
+// localStorage.removeItem("todos");
 // selectors
 const addTodoButton = document.querySelector('.add_todo_button');
 const toDoInput = document.querySelector('.todo_input');
@@ -9,14 +9,18 @@ addTodoButton.addEventListener('click', saveToDo);
 
 // functions
 function saveToDo(e){
+    let todo = {
+        condition:"",
+        todo:toDoInput.value
+    }
     e.preventDefault();  
     if(localStorage.getItem('todos') === null){
     let todos = [];
-    todos.push(toDoInput.value); 
+    todos.unshift(todo); 
     localStorage.setItem('todos', JSON.stringify(todos));  
     }else{
         let todos = JSON.parse(localStorage.getItem('todos'));
-        todos.push(toDoInput.value);
+        todos.unshift(todo);
         localStorage.setItem('todos', JSON.stringify(todos));
     }
     addTodos();
@@ -26,7 +30,7 @@ function saveToDo(e){
 }
 
 function deleteTodo(item){
-    console.log(item);
+    
 
     let todosarr = JSON.parse(localStorage.getItem('todos'));
    for(let i=0; i<todosarr.length; i++){
@@ -39,7 +43,7 @@ function deleteTodo(item){
    
 }
 
-function todoDone(event){
+function todoDone(todo){
     let todoItem = event.target;
     todoItem.parentElement.classList.toggle('doneTodo');
     
@@ -48,19 +52,22 @@ function todoDone(event){
 function addTodos(){
     let todos = JSON.parse(localStorage.getItem('todos'));
     todoList.innerHTML = '';
-    todos.forEach(function(todo)
+    if(todos.length>0){
+        todos.forEach(function(todo)
     {
         
         todoList.innerHTML += ` <li>
                                     <div class="todo_item flex">
-                                        <div class="todo_text">${todo}</div>
-                                        <button onclick="todoDone(event)" class="done">done</button>
+                                        <div class="todo_text">${todo.todo}</div>
+                                        <button onclick="todoDone()" class="done">done</button>
                                         <button onclick="deleteTodo(${todos.indexOf(todo)})" class="delete">delete</button>
                                     </div>
                                 </li>`
                                 
-    console.log(todo);
+    
     });
+    }
+    
     
     // toDoInput.value = '';
 }
