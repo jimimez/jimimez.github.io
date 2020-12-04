@@ -11,11 +11,18 @@
         <h1>Add To DO</h1>
         <form class="flex" action="">
             <input class="todo_input" type="text">
-            <button class="add_todo_button" type="submit">add</button>
+            <button class="add_todo_button" type="submit">Add</button>
+            <button class="edit_todo_button" type="submit">Edit</button>
         </form>
-        <ul class="todo_list">
-
-        </ul>
+        <div class="todo_wrapper">
+            <h1>Uncompleted</h1>
+            <ul class="todo_list"></ul>
+        </div>
+        
+        <div class="done_wrapper">
+            <h1>Completed</h1>
+            <ul class="todo_list"> </ul>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>
