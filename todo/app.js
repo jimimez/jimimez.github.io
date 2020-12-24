@@ -4,11 +4,18 @@ const toDoInput = document.querySelector('.todo_input');
 const todoList = document.querySelector('.todo_list');
 const isDoneWrapper = document.querySelector('.done_wrapper .todo_list');
 const editTodoButton = document.querySelector('.edit_todo_button');
+const modal = document.querySelector('.modal');
+const editInput = document.querySelector('.edit_input');
+const editButtonModal = document.querySelector('.edit_todo_modal');
+const modalClose = document.querySelector('.modal-close');
+
 // eventlisteners
 addTodoButton.addEventListener('click', (e) => {
     saveToDo(e);
 })
-
+modalClose.addEventListener('click', ()=>{
+    modal.classList.remove('active');
+})
 
 // functions
 let idCounter = 1;
@@ -70,23 +77,25 @@ function addTodos() {
                     li.innerHTML = `
                         <div class="todo_item flex">
                             <div class="todo_text">${todo.todo}</div>
-                            <button data-id="${todo.id}" class="done">Done</button>
-                            <button data-id="${todo.id}" class="delete">Delete</button>
-                            <button data-id="${todo.id}" class="edit">Edit</button>
+                            <button data-id="${todo.id}" class="done"><i class="fas fa-check-square"></i></button>
+                            <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
+                            <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
                         </div>
                     `;
                     todoList.prepend(li);
+                    toDoInput.focus();
                 } else {
                     let li = document.createElement('li');
                     li.innerHTML = `
                         <div class="todo_item flex">
                             <div class="todo_text">${todo.todo}</div>
-                            <button data-id="${todo.id}" class="uncompleted doneTodo">Uncompleted</button>
-                            <button data-id="${todo.id}" class="delete">Delete</button>
-                            <button data-id="${todo.id}" class="edit">Edit</button>
+                            <button data-id="${todo.id}" class="uncompleted doneTodo"><i class="fas fa-undo-alt"></i></button>
+                            <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
+                            <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
                         </div>
                     `;
                     isDoneWrapper.prepend(li);
+                    toDoInput.focus();
                 }
 
             });
@@ -119,11 +128,17 @@ function addTodos() {
                     todos.map(item => {
                         if(item.id == id){
                             toDoInput.value = item.todo;
-                            editTodoButton.addEventListener('click', () => {
-                                item.todo = toDoInput.value;
+                            modal.classList.add('active');
+                            editInput.focus();
+                            editInput.value = item.todo;
+                            editButtonModal.addEventListener('click', () => {
+                                item.todo = editInput.value;
                                 localStorage.setItem('todos', JSON.stringify(todos));
                                   addTodos();
+                                  modal.classList.remove('active');
                              })
+
+                             
                              
                         }
                     })

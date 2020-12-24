@@ -1,3 +1,7 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 *{
     margin:0;
     padding:0;
@@ -19,20 +23,35 @@ body{
     flex-direction: column;
 }
 
+form {
+    align-items: center;
+}
+
 ul{
     list-style-type: none;
 }
 
+.todo_wrapper h1{
+    text-align: center;
+}
+
 .todo_item{
     padding: 5px;
-    justify-content: center;
+    justify-content: center
     align-items: center;
+}
+
+.todo_input {
+    height: 35px;
 }
 
 button{
     border: none;
     outline: none;
-    padding: 5px;
+    font-size: 40px;
+    background: none;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 input{
@@ -40,6 +59,7 @@ input{
     outline: none;
     padding: 5px;
     width:23rem;
+    box-sizing: border-box;
 }
 
 .todo_text{
@@ -48,27 +68,62 @@ input{
     width:15rem;
     height: 25px;
     box-sizing: border-box;
+    height: 35px;
+    width: 23rem;
 }
 
 .delete{
-    background-color: crimson;
-    color:white;
+    
+    
 
 }
 
 .done{
-    background-color: darkgreen;
-    color: white;
+    
 }
 .uncompleted{
-    background-color: darkgreen;
-    color: white;
+    
+    
 }
 .doneTodo{
     text-decoration: line-through;
     opacity: 0.5;
 }
 
+.done_wrapper h1{
+    text-align: center;
+}
+
 .edit_todo_button{
     margin-left: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    font-weight: bold;
+}
+
+.modal-text {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.edit_input {
+    border: 1px solid blueviolet;
+    
 }
