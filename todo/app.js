@@ -8,6 +8,7 @@ const modal = document.querySelector('.modal');
 const editInput = document.querySelector('.edit_input');
 const editButtonModal = document.querySelector('.edit_todo_modal');
 const modalClose = document.querySelector('.modal-close');
+const overLay = document.querySelector('.overlay');
 
 // eventlisteners
 addTodoButton.addEventListener('click', (e) => {
@@ -15,6 +16,7 @@ addTodoButton.addEventListener('click', (e) => {
 })
 modalClose.addEventListener('click', ()=>{
     modal.classList.remove('active');
+    overLay.classList.remove('active');
 })
 
 // functions
@@ -127,8 +129,9 @@ function addTodos() {
                     let id = editButton.getAttribute('data-id');
                     todos.map(item => {
                         if(item.id == id){
-                            toDoInput.value = item.todo;
+                            // toDoInput.value = item.todo;
                             modal.classList.add('active');
+                            overLay.classList.add('active');
                             editInput.focus();
                             editInput.value = item.todo;
                             editButtonModal.addEventListener('click', () => {

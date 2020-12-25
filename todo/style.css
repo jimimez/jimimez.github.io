@@ -107,6 +107,7 @@ input{
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     font-weight: bold;
+    z-index: 20;
 }
 
 .modal-text {
@@ -126,4 +127,20 @@ input{
 .edit_input {
     border: 1px solid blueviolet;
     
+}
+
+.overlay {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
 }
