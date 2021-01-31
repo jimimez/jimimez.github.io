@@ -15,11 +15,16 @@ addTodoButton.addEventListener('click', (e) => {
     saveToDo(e);
 })
 modalClose.addEventListener('click', ()=>{
+    closeModa();
+})
+overLay.addEventListener('click', ()=>{
+    closeModa();
+})
+// functions
+function closeModa() {
     modal.classList.remove('active');
     overLay.classList.remove('active');
-})
-
-// functions
+}
 let idCounter = 1;
 let todos;
 let todo;
@@ -31,7 +36,7 @@ function setToLocalStorage(){
 }
 function saveToDo(e) {
     e.preventDefault();
-    if (toDoInput.value == ""){
+    if (toDoInput.value === ""){
         alert("enter todo text");
         return false;
     }
@@ -47,26 +52,14 @@ function saveToDo(e) {
         todos = JSON.parse(localStorage.getItem('todos'));
         setToLocalStorage();
     }
+    
     addTodos();
     toDoInput.value = '';
 }
 
-function deleteTodo(item) {
-
-
-    let todosarr = JSON.parse(localStorage.getItem('todos'));
-    for (let i = 1; i <= todosarr.length; i++) {
-        if (i === item) {
-            todosarr.splice(i, 1);
-        }
-    }
-    localStorage.setItem('todos', JSON.stringify(todosarr));
-
-}
-
-
 // dasaxati func
 function addTodos() {
+    getTodosLsit();
     let todos = JSON.parse(localStorage.getItem('todos'));
     todoList.innerHTML = '';
     isDoneWrapper.innerHTML = '';
@@ -78,10 +71,14 @@ function addTodos() {
                     let li = document.createElement('li');
                     li.innerHTML = `
                         <div class="todo_item flex">
-                            <div class="todo_text">${todo.todo}</div>
-                            <button data-id="${todo.id}" class="done"><i class="fas fa-check-square"></i></button>
-                            <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
-                            <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
+                            <div class="todo_text flex">${todo.todo}
+                                <div class="todo_buttons">
+                                    <button data-id="${todo.id}" class="done"><i class="fas fa-check-square"></i></button>
+                                    <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
+                                    <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
+                                </div>
+                            </div>
+                            
                         </div>
                     `;
                     todoList.prepend(li);
@@ -90,7 +87,7 @@ function addTodos() {
                     let li = document.createElement('li');
                     li.innerHTML = `
                         <div class="todo_item flex">
-                            <div class="todo_text">${todo.todo}</div>
+                            <div style="text-decoration:line-through;" class="todo_text">${todo.todo}</div>
                             <button data-id="${todo.id}" class="uncompleted doneTodo"><i class="fas fa-undo-alt"></i></button>
                             <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
                             <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
@@ -101,9 +98,6 @@ function addTodos() {
                 }
 
             });
-            
-            console.log(todoList.children.length,'gauketebeli')
-            console.log(isDoneWrapper.children.length,'gaketebuli')
             let doneButtons = document.querySelectorAll('.done');
             let uncompletedButtons = document.querySelectorAll('.uncompleted');
             let delButtons = document.querySelectorAll('.delete');
@@ -138,15 +132,12 @@ function addTodos() {
                                 item.todo = editInput.value;
                                 localStorage.setItem('todos', JSON.stringify(todos));
                                   addTodos();
-                                  modal.classList.remove('active');
-                             })
-
-                             
-                             
+                                 closeModal();
+                             }); 
                         }
-                    })
-                })
-            })
+                    });
+                });
+            });
             // ukan abrunebs gasaketebelshi
             uncompletedButtons.forEach(unCompleted => {
                 unCompleted.addEventListener('click', () => {
@@ -158,7 +149,7 @@ function addTodos() {
                     });
                     localStorage.setItem('todos', JSON.stringify(todos));
                     addTodos();
-                })
+                });
             });
             // delete items
             delButtons.forEach(del=>{
@@ -171,8 +162,7 @@ function addTodos() {
                         }
                     });
                     localStorage.setItem('todos', JSON.stringify(todos));
-                    console.log(todoList.children.length,'gauketebeli')
-            console.log(isDoneWrapper.children.length,'gaketebuli')
+                    getTodosLsit();
                 })
             });
         }
@@ -180,4 +170,31 @@ function addTodos() {
 }
 function removeElement(removedElement) {
     removedElement.remove();
+}
+function getTodosLsit(){
+    let allTodos = JSON.parse(localStorage.getItem('todos'));
+    let allTodosCount = document.querySelector(".all_todos_count");
+    let completedCount = document.querySelector(".all_completed_count");
+    let unCompletedCount = document.querySelector(".all_uncompleted_count");
+    if (allTodos != null) {
+        if(allTodos.length > 0){
+            allTodosCount.innerText = allTodos.length;
+            let completedTodos = allTodos.filter(item=> item.isDefault !== false);
+            let unCompletedTodos = allTodos.filter(item=> item.isDefault !== true);
+            if (completedTodos.length > 0) {
+                completedCount.innerText = completedTodos.length;
+            }else{
+                completedCount.innerText = '0';
+            }
+            if (unCompletedTodos.length > 0) {
+                unCompletedCount.innerText = unCompletedTodos.length;
+            }else{
+                unCompletedCount.innerText = '0';
+            }
+        }else{
+            allTodosCount.innerText = '0';
+            completedCount.innerText = '0';
+            unCompletedCount.innerText = '0';
+        }
+    }
 }

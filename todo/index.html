@@ -10,10 +10,25 @@
 </head>
 <body onload="addTodos()">
     <div class="container flex">
+        <ul class="todos_info_list_group">
+            <li class="todos_info_list flex">
+                <div class="all_todos">all todos: </div>
+                <div class="all_todos_count"></div>
+            </li>
+            <li class="todos_info_list flex">
+                <div class="all_uncompleted">all uncompleted: </div>
+                <div class="all_uncompleted_count"></div>
+            </li>
+            <li class="todos_info_list flex">
+                <div class="all_completed">all completed: </div>
+                <div class="all_completed_count"></div>
+            </li>
+            
+        </ul>
         <h1>Add To DO</h1>
         <form class="flex" action="">
-            <input class="todo_input" type="text" autofocus>
-            <button class="add_todo_button" type="submit"><i class="fas fa-plus-square"></i></button>
+                <input class="todo_input" type="text" placeholder="add a todo"autofocus>
+                <button class="add_todo_button" type="submit"><i class="fas fa-plus-square"></i></button>
         </form>
         <div class="todo_wrapper">
             <h1>Uncompleted</h1>
@@ -30,8 +45,10 @@
              <p>edit todo text</p>
              <p class="modal-close">&times;</p>
         </div>
-        <input class="edit_input" type="text" name="" id="">
-        <button class="edit_todo_modal"><i class="fas fa-check-square" aria-hidden="true"></i></button>
+        <div class="edit_input_div">
+            <input class="edit_input" type="text" name="" id="">
+            <button class="edit_todo_modal"><i class="fas fa-check-square" aria-hidden="true"></i></button>
+        </div>
     </div>
     <div class="overlay"></div>
     <script src="https://kit.fontawesome.com/f3920cc7b0.js" crossorigin="anonymous"></script>
