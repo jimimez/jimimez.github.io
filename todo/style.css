@@ -1,5 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #487eb0, #fbc531 );
+    min-height: 100vh;
 }
 
 *{
@@ -21,14 +23,29 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 800px;
+    margin: auto;
 }
 
 form {
     align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 ul{
     list-style-type: none;
+}
+
+.todo_wrapper{
+    width:100%;
+}
+
+.add_todo_button{
+    /* transform: translate(5px, -50%); */
+    position: absolute;
+    top:0;
+    right:0;
 }
 
 .todo_wrapper h1{
@@ -41,14 +58,24 @@ ul{
     align-items: center;
 }
 
+.edit_input_div {
+    display: flex;
+}
+
 .todo_input {
     height: 35px;
+    font-size: 16px;
+    height: 35px;
+    text-transform: capitalize;
 }
+
+
+    
 
 button{
     border: none;
     outline: none;
-    font-size: 40px;
+    font-size: 20px;
     background: none;
     cursor: pointer;
     margin-left: 5px;
@@ -58,7 +85,7 @@ input{
     border: none;
     outline: none;
     padding: 5px;
-    width:23rem;
+    width:100%;
     box-sizing: border-box;
 }
 
@@ -69,22 +96,12 @@ input{
     height: 25px;
     box-sizing: border-box;
     height: 35px;
-    width: 23rem;
+    justify-content: space-between;
+    width:100%;
 }
 
-.delete{
-    
-    
 
-}
 
-.done{
-    
-}
-.uncompleted{
-    
-    
-}
 .doneTodo{
     text-decoration: line-through;
     opacity: 0.5;
@@ -143,4 +160,9 @@ input{
 
 .overlay.active {
     display: block;
+}
+
+
+.all_uncompleted_count, .all_todos_count, .all_completed_count {
+    margin-left: 5px;
 }
