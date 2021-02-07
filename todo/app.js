@@ -87,10 +87,15 @@ function addTodos() {
                     let li = document.createElement('li');
                     li.innerHTML = `
                         <div class="todo_item flex">
-                            <div style="text-decoration:line-through;" class="todo_text">${todo.todo}</div>
-                            <button data-id="${todo.id}" class="uncompleted doneTodo"><i class="fas fa-undo-alt"></i></button>
-                            <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
-                            <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
+                            <div  class="todo_text flex">
+                            <span class="done_todo_text">${todo.todo}</span>
+                                <div class="done_todo_buttons">
+                                    <button data-id="${todo.id}" class="uncompleted doneTodo"><i class="fas fa-undo-alt"></i></button>
+                                    <button data-id="${todo.id}" class="delete"><i class="fas fa-trash-alt"></i></button>
+                                    <button data-id="${todo.id}" class="edit"><i class="fas fa-pen-square"></i></button>
+                                </div>
+                            </div>
+                            
                         </div>
                     `;
                     isDoneWrapper.prepend(li);
