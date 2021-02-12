@@ -192,4 +192,9 @@ input{
     .container{
         max-width: 95%;
     }
+
+    .modal {
+        width:90%;
+        top:60%;
+    }
   }
