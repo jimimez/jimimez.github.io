@@ -15,13 +15,13 @@ addTodoButton.addEventListener('click', (e) => {
     saveToDo(e);
 })
 modalClose.addEventListener('click', ()=>{
-    closeModa();
+    closeModal();
 })
 overLay.addEventListener('click', ()=>{
-    closeModa();
+    closeModal();
 })
 // functions
-function closeModa() {
+function closeModal() {
     modal.classList.remove('active');
     overLay.classList.remove('active');
 }
